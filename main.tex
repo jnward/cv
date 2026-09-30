@@ -1,0 +1,123 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+
+% FONT OPTION 1: Palatino (most popular for academic documents)
+% \usepackage{mathpazo}
+
+% FONT OPTION 2: Libertine (modern, clean)
+\usepackage{libertine}
+
+% FONT OPTION 3: Times (classic, more compact)  
+% \usepackage{newtxtext}
+
+% FONT OPTION 4: Garamond (elegant, traditional)
+% \usepackage{ebgaramond}
+
+% FONT OPTION 5: TeX Gyre Termes (Times-like but nicer)
+% \usepackage{tgtermes}
+
+% Remove page number
+\pagestyle{empty}
+
+% Reduce space around sections
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{16pt}{6pt}
+\titlespacing{\subsection}{0pt}{5pt}{3pt}
+
+% Custom section formatting - larger headers, no lines
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\bfseries}{}{0pt}{}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Name and Contact
+\begin{center}
+    {\LARGE \textbf{Jake Ward}} \\
+    \vspace{3pt}
+    \href{https://github.com/jnward}{github.com/jnward} $|$ 
+    % \href{https://jakeward.page}{jakeward.page} $|$ 
+    \href{mailto:jakenicholasward@gmail.com}{jakenicholasward@gmail.com}
+\end{center}
+
+\section{Research Experience}
+
+\textbf{MATS} \hfill January 2026--Present \\
+\textit{Fellow} [Alex Cloud \& Alex Turner]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
+    \item Developing alignment methods which leverage weak oversight.
+\end{itemize}
+\vspace{8pt}
+
+\textbf{MATS} \hfill June 2025--December 2025 \\
+\textit{Scholar} [Adam Shai \& Paul Riechers]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
+    \item Novel methods for interpreting reasoning models using minimal parameter adapters.
+    \item Studied how LLMs represent distributions over their beliefs about the world.
+\end{itemize}
+\vspace{8pt}
+
+% \textbf{MATS} \hfill April 2025--May 2025 \\
+% \textit{Training Phase Scholar} [Neel Nanda]
+% \begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
+%     \item Identified representations in base models that are repurposed by reasoning models.
+% \end{itemize}
+% \vspace{8pt}
+
+\textbf{AISC} \hfill February 2025--April 2025 \\
+\textit{Mentee} [Kola Ayonrinde (UK AISI)]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
+    \item Explored whether SAEs represent entity-attribute binding vectors.
+    \item Examined dynamics of SAE feature splitting using semi-synthetic data.
+\end{itemize}
+\vspace{8pt}
+
+\textbf{University of Rhode Island} \hfill March 2019--July 2019 \\
+\textit{Research Assistant} [Marco Alvarez]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
+    \item Developed and optimized ML pipelines for subject age estimation.
+\end{itemize}
+
+\section{Publications}
+Satchel Grant, Victor Gillioz, \textbf{Jake Ward}, Thomas McGrath. ``Shifting the Gradient: Understanding How Defensive Training Methods Protect Language Model Integrity.'' \textit{arXiv preprint arXiv:2604.16423}, 2026.
+\vspace{4pt}
+
+Nathan Hu, \textbf{Jake Ward}, Thomas Icard, Christopher Potts. ``Transcoder Adapters for Reasoning-Model Diffing.'' \textit{arXiv preprint arXiv:2602.20904}, 2026.
+\vspace{4pt}
+
+\textbf{Jake Ward}, Paul Riechers, Adam Shai. ``Rank-1 LoRAs Encode Interpretable Reasoning Signals.'' \textit{NeurIPS Workshop on Mechanistic Interpretability}, 2025.
+\vspace{4pt}
+
+\textbf{Jake Ward}. ``Reasoning Elicitation is Scale-Dependent.'' \textit{NeurIPS Workshop on Efficient Reasoning}, 2025.
+
+\vspace{4pt}
+\textbf{Jake Ward}, Chuqiao Lin, Constantin Venhoff, Neel Nanda. ``Reasoning-Finetuning Repurposes Latent Representations in Base Models.'' \textit{ICML Workshop on Actionable Interpretability}, 2025.
+
+\section{Industry Experience}
+
+\textbf{Melange} \hfill February 2021--September 2023 \\
+\textit{Co-founder \& Lead Engineer}
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
+    \item We raised a \$10M seed round to build an auction-based prediction markets platform.
+    \item Later pivoted to building LLM agents for patent prosecution.
+    \item Led entire engineering team of $\sim$5 engineers.
+\end{itemize}
+\vspace{8pt}
+
+\textbf{Spark Insights} \hfill July 2019--May 2021 \\
+\textit{ML Engineer}
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
+    \item CV models to identify and predict damage to properties after natural disasters.
+\end{itemize}
+
+\section{Education}
+
+\textbf{University of Rhode Island} \hfill 2015--2019 \\
+B.S. Computer Science
+
+\end{document}
