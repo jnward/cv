@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage[margin=0.75in]{geometry}
-\usepackage{hyperref}
+\usepackage[hmargin=0.75in,vmargin=0.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
 
@@ -24,7 +24,7 @@
 
 % Reduce space around sections
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{16pt}{6pt}
+\titlespacing{\section}{0pt}{11pt}{5pt}
 \titlespacing{\subsection}{0pt}{5pt}{3pt}
 
 % Custom section formatting - larger headers, no lines
@@ -47,20 +47,27 @@
 
 \section{Research Experience}
 
-\textbf{MATS} \hfill January 2026--Present \\
+\textbf{Anthropic Fellows Program} \hfill August 2026--Present \\
+\textit{Fellow} [Shawn Wang \& Adam Jermyn]
+\begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
+    \item Studying how loss-masking can affect generalization in character training.
+\end{itemize}
+\vspace{5pt}
+
+\textbf{MATS} \hfill January 2026--August 2026 \\
 \textit{Fellow} [Alex Cloud \& Alex Turner]
 \begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
-    \item Developing alignment methods which leverage weak oversight.
+    \item Developed GRAFT, an alignment method which leverages weak monitors to localize and prevent reward hacking during RL~\ref{pub:gr}.
 \end{itemize}
-\vspace{8pt}
+\vspace{5pt}
 
 \textbf{MATS} \hfill June 2025--December 2025 \\
-\textit{Scholar} [Adam Shai \& Paul Riechers]
+\textit{Fellow} [Adam Shai \& Paul Riechers]
 \begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
-    \item Novel methods for interpreting reasoning models using minimal parameter adapters.
+    \item Developed novel methods for interpreting reasoning models using minimal parameter adapters~\ref{pub:rank1}.
     \item Studied how LLMs represent distributions over their beliefs about the world.
 \end{itemize}
-\vspace{8pt}
+\vspace{5pt}
 
 % \textbf{MATS} \hfill April 2025--May 2025 \\
 % \textit{Training Phase Scholar} [Neel Nanda]
@@ -75,7 +82,7 @@
     \item Explored whether SAEs represent entity-attribute binding vectors.
     \item Examined dynamics of SAE feature splitting using semi-synthetic data.
 \end{itemize}
-\vspace{8pt}
+\vspace{5pt}
 
 \textbf{University of Rhode Island} \hfill March 2019--July 2019 \\
 \textit{Research Assistant} [Marco Alvarez]
@@ -84,35 +91,30 @@
 \end{itemize}
 
 \section{Publications}
-Satchel Grant, Victor Gillioz, \textbf{Jake Ward}, Thomas McGrath. ``Shifting the Gradient: Understanding How Defensive Training Methods Protect Language Model Integrity.'' \textit{arXiv preprint arXiv:2604.16423}, 2026.
-\vspace{4pt}
-
-Nathan Hu, \textbf{Jake Ward}, Thomas Icard, Christopher Potts. ``Transcoder Adapters for Reasoning-Model Diffing.'' \textit{arXiv preprint arXiv:2602.20904}, 2026.
-\vspace{4pt}
-
-\textbf{Jake Ward}, Paul Riechers, Adam Shai. ``Rank-1 LoRAs Encode Interpretable Reasoning Signals.'' \textit{NeurIPS Workshop on Mechanistic Interpretability}, 2025.
-\vspace{4pt}
-
-\textbf{Jake Ward}. ``Reasoning Elicitation is Scale-Dependent.'' \textit{NeurIPS Workshop on Efficient Reasoning}, 2025.
-
-\vspace{4pt}
-\textbf{Jake Ward}, Chuqiao Lin, Constantin Venhoff, Neel Nanda. ``Reasoning-Finetuning Repurposes Latent Representations in Base Models.'' \textit{ICML Workshop on Actionable Interpretability}, 2025.
+\begin{enumerate}[label={[\arabic*]},leftmargin=22pt,itemsep=3pt,topsep=0pt,parsep=0pt]
+    \item\label{pub:gr} \textbf{Jake Ward}*, Shawn Hu*, Aria Wong, Nathan Hu, Bryce Woodworth, Alexander Matt Turner, Alex Cloud. ``Gradient Routing Localizes and Removes Unintended Behaviors in RL.'' \textit{NeurIPS}, 2026. (Poster)
+    \item Satchel Grant, Victor Gillioz, \textbf{Jake Ward}, Thomas McGrath. ``Shifting the Gradient: Understanding How Defensive Training Methods Protect Language Model Integrity.'' \textit{NeurIPS}, 2026. (Poster)
+    \item Nathan Hu, \textbf{Jake Ward}, Thomas Icard, Christopher Potts. ``Transcoder Adapters for Reasoning-Model Diffing.'' \textit{NeurIPS}, 2026. (Poster)
+    \item\label{pub:rank1} \textbf{Jake Ward}, Paul Riechers, Adam Shai. ``Rank-1 LoRAs Encode Interpretable Reasoning Signals.'' \textit{NeurIPS Workshop on Mechanistic Interpretability}, 2025.
+    \item \textbf{Jake Ward}. ``Reasoning Elicitation is Scale-Dependent.'' \textit{NeurIPS Workshop on Efficient Reasoning}, 2025.
+    \item \textbf{Jake Ward}*, Chuqiao Lin*, Constantin Venhoff, Neel Nanda. ``Reasoning-Finetuning Repurposes Latent Representations in Base Models.'' \textit{ICML Workshop on Actionable Interpretability}, 2025.
+\end{enumerate}
 
 \section{Industry Experience}
 
 \textbf{Melange} \hfill February 2021--September 2023 \\
 \textit{Co-founder \& Lead Engineer}
 \begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
-    \item We raised a \$10M seed round to build an auction-based prediction markets platform.
+    \item Co-founded a venture-backed startup (\$10M seed) building an auction-based prediction markets platform.
     \item Later pivoted to building LLM agents for patent prosecution.
-    \item Led entire engineering team of $\sim$5 engineers.
+    \item Led our engineering team of $\sim$5 engineers.
 \end{itemize}
-\vspace{8pt}
+\vspace{5pt}
 
 \textbf{Spark Insights} \hfill July 2019--May 2021 \\
 \textit{ML Engineer}
 \begin{itemize}[noitemsep,topsep=2pt,leftmargin=15pt,label=\textendash]
-    \item CV models to identify and predict damage to properties after natural disasters.
+    \item Developed computer vision models to identify and predict damage to properties after natural disasters.
 \end{itemize}
 
 \section{Education}
